@@ -1,0 +1,158 @@
+header,
+hgroup,
+nav,
+footer,
+figure,
+figcaption,
+aside,
+section,
+article {
+	display: block;
+}
+
+/* My code */
+html,
+body {
+	min-height: 100%;
+}
+
+/* ------- */
+
+body {
+	/* My code */
+	background-image: url(ptrbackground.jpg);
+	background-color: #00569f;
+	background-size: contain;
+	/* ------------- */
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+	font-size: 1.2em;
+}
+
+nav a:visited {
+	color: #344873;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+}
+
+h2 {
+	color: #3399CC;
+	font-size: 2em;
+}
+
+h1,
+h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#contact {
+	font-size: 90%;
+}
+
+dt {
+	color: #000033;
+}
+
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+/* My code */
+#wrapper {
+	/* Use grid for 1-2 layout */
+	display: grid;
+	grid-template-columns: .1fr 1fr;
+	grid-template-rows: 0.5fr 2.5fr .3fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+
+	min-width: 600px;
+	width: 80%;
+	height: 800px;
+	background-color: white;
+	;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+/* ----- Header ----- */
+
+header {
+	grid-area: 1 / 1 / 2 / 6;
+	background-image: url(sunset.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header h1 {
+	font-size: 2.5em;
+	color: white;
+}
+
+/* ----- Navbar ---- */
+nav {
+	grid-area: 2 / 1 / 5 / 2;
+	background-color: #90cae7;
+	width: 250px;
+}
+
+nav ul {
+	list-style-type: none;
+	padding-left: 30px;
+	font-size: 1.5em;
+}
+
+nav a {
+	color: #000f3e;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Main content*/
+#content {
+	grid-area: 2 / 2 / 3 / 3;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+
+#content img {
+	width: 480px;
+	float: left;
+	margin-right: 30px;
+}
+
+#content li,
+p {
+	font-size: 1.1em;
+}
+
+.resort {
+	font-weight: bold;
+	color: rgb(97, 127, 181);
+}
+
+/* Marker selector add custom list-style */
+#content li::marker {
+	content: url(marker.gif);
+}
+
+/* Contact */
+#contact {
+	font-size: 1.1em;
+}
+
+/* Footer*/
+footer {
+	grid-area: 3 / 2 / 4 / 3;
+	padding-left: 30px;
+}
